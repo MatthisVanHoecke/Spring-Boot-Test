@@ -1,0 +1,28 @@
+{
+    "databaseChangeLog": [
+        {
+            "changeSet": {
+                "id": "202412071803",
+                "author": "matthisvh",
+                "changes": [
+                    {
+                        "renameColumn": {
+                            "columnDataType": "varchar(255)",
+                            "newColumnName": "image_url",
+                            "oldColumnName": "ImageUrl",
+                            "tableName": "article"
+                        }
+                    },
+                    {
+                        "renameColumn": {
+                            "columnDataType": "double(10,2)",
+                            "newColumnName": "extra_character_price",
+                            "oldColumnName": "ExtraCharacterPrice",
+                            "tableName": "portrait"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "databaseChangeLog": [
+        {
+            "changeSet": {
+                "id": "202412051612",
+                "author": "matthisvh",
+                "changes": [
+                    {
+                        "renameColumn": {
+                            "columnDataType": "varchar(15)",
+                            "newColumnName": "transaction_status",
+                            "oldColumnName": "TransactionStatus",
+                            "tableName": "order"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
