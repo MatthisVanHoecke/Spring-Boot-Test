@@ -1,0 +1,4 @@
+FROM openjdk:23-jdk
+ARG JAR_FILE=target/*.jar
+COPY ${JAR_FILE} app.jar
+ENTRYPOINT ["java","-jar","-DDB_USER=$DB_USER","-DDB_PASSWORD=$DB_PASSWORD","-DDB_URL=$DB_URL","/app.jar"]

@@ -1,0 +1,4 @@
+databaseChangeLog:
+  - logicalFilePath: "db/migrations"
+  - includeAll:
+      path: "classpath:/db/migrations"
